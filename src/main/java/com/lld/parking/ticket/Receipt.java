@@ -12,6 +12,16 @@ public class Receipt {
     private ParkingSpot  parkingSpot;
     private LocalDateTime vehicleEntryTime;
     private LocalDateTime vehicleExitTime;
+    private BigDecimal tollPrice;
+
+    public Receipt(String receiptId, Vehicle vehicle,
+                   ParkingSpot parkingSpot, LocalDateTime vehicleEntryTime) {
+        this.receiptId = receiptId;
+        this.vehicle = vehicle;
+        this.parkingSpot = parkingSpot;
+        this.vehicleEntryTime = vehicleEntryTime;
+        this.vehicleExitTime = null;
+    }
 
     public String getReceiptId() {
         return receiptId;
@@ -51,6 +61,14 @@ public class Receipt {
 
     public void setVehicleExitTime(LocalDateTime vehicleExitTime) {
         this.vehicleExitTime = vehicleExitTime;
+    }
+
+    public BigDecimal getTollPrice() {
+        return tollPrice;
+    }
+
+    public void setTollPrice(BigDecimal tollPrice) {
+        this.tollPrice = tollPrice;
     }
 
     public BigDecimal calculateParkingTime() {
