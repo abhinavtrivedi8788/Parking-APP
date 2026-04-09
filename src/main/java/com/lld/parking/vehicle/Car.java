@@ -3,7 +3,7 @@ package com.lld.parking.vehicle;
 public class Car implements Vehicle {
     String licencePlate;
 
-    Car(String licencePlate) {
+    public Car(String licencePlate) {
         this.licencePlate = licencePlate;
     }
 

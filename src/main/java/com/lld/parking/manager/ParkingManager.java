@@ -3,6 +3,7 @@ package com.lld.parking.manager;
 import com.lld.parking.spot.ParkingSpot;
 import com.lld.parking.vehicle.Vehicle;
 import com.lld.parking.vehicle.VehicleSize;
+import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 import java.util.List;
@@ -13,6 +14,7 @@ import java.util.Map;
  * ParkingManager is responsible for managing the parking spots and vehicles in the parking lot.
  */
 
+@Component
 public class ParkingManager {
 
     private final Map<VehicleSize, List<ParkingSpot>> sizeSpotMapping;

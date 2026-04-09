@@ -5,9 +5,11 @@ import com.lld.parking.manager.ParkingManager;
 import com.lld.parking.spot.ParkingSpot;
 import com.lld.parking.ticket.Receipt;
 import com.lld.parking.vehicle.Vehicle;
+import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 
+@Component
 public class ParkingLotOrchestrator {
 
     private ParkingManager  parkingManager;
