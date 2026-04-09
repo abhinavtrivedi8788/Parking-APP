@@ -1,17 +1,16 @@
-package com.lld.parking.parkingspot;
+package com.lld.parking.spot;
 
 import com.lld.parking.vehicle.Vehicle;
 import com.lld.parking.vehicle.VehicleSize;
 
-public class HeavyVehicleSpot implements  ParkingSpot{
+public class RegularVehicleSpot implements  ParkingSpot{
     private int parkingSpotNumber;
     private Vehicle vehicle;
 
-    public HeavyVehicleSpot(int parkingSpotNumber) {
+    public RegularVehicleSpot(int parkingSpotNumber) {
         this.parkingSpotNumber = parkingSpotNumber;
         this.vehicle = null;
     }
-
 
     @Override
     public boolean isAvailable() {
@@ -34,9 +33,8 @@ public class HeavyVehicleSpot implements  ParkingSpot{
     public int getParkingSpotNumber() {
         return this.parkingSpotNumber;
     }
-
     @Override
     public VehicleSize getVehicleSize() {
-        return VehicleSize.LARGE;
+        return VehicleSize.MEDIUM;
     }
 }

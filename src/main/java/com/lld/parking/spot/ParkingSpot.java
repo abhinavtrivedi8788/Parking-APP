@@ -1,4 +1,4 @@
-package com.lld.parking.parkingspot;
+package com.lld.parking.spot;
 
 import com.lld.parking.vehicle.Vehicle;
 import com.lld.parking.vehicle.VehicleSize;
